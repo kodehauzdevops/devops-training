@@ -37,7 +37,7 @@ __Step 2: Install smartgit__
 3. Use git bash or smartgit to ```clone``` your fork to a local directory(folder)
   + ```git clone https://link-to-github-repo```
 5. Make changes in the working directory
-6. Now ```add``` and ```commit``` the changes
+6. Now ```add``` and ```commit``` the changes.
   + ```git add [filename]``` and ```git commit -m "Comit message"``` 
 7. Next ```push``` the changes back to your forked repo
   + ```git push remote main```
