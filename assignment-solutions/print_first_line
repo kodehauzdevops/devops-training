@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# Asking the user for the directory path
+read -p "Enter the directory path: " directory
+
+# Checking if the directory exist
+if [ ! -d "$directory" ]; then
+  echo "Directory not found."
+  exit 1
+fi
+
+# asking user for file listing criteria
+echo "Choose a file listing option:"
+echo "1. List all files in the directory"
+echo "2. List only text files (*.txt)"
+read -p "Enter your choice (1 or 2): " choice
+
+if [ "$choice" = "1" ]; then
+  # Listing all files in the directory
+  file_list=$(ls "$directory")
+elif [ "$choice" = "2" ]; then
+  # Listing only text files
+  file_list=$(ls "$directory" | grep -E "\.txt$")
+else
+  echo "Invalid choice."
+  exit 1
+fi
+
+# Looping through the files and print the first line from each file
+for file in $file_list; do
+  first_line=$(head -n 1 "$directory/$file")
+  echo "File: $file"
+  echo "First line: $first_line"
+  echo "----------------------------------"
+done
+

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+read -p "Hi user! Please enter your name " user_name
+
+if [ -z "$user_name" ]; then
+	echo "Please enter a valid name";
+	exit 1
+fi
+
+echo "Good morning "$user_name". Welcome to Kodehauz Solution Planet"	
