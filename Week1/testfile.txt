@@ -1,3 +1,6 @@
 Commit Your Changes: Now, when you try to commit your changes using git commit, the pre-commit hook script will run your chosen code formatter on the staged files. If the formatting does not meet your standards, the commit will be rejected until the code is properly formatted.
 
 Remember that the specific implementation of code formatting and the tool you use may vary depending on your project's requirements and the programming language you're working with. The example above demonstrates a general approach using a pre-commit hook and clang-format. You can adapt it to your project's needs and tools of choice.
+
+How do I write a text file in Windows?
+Another way to create a text file is to right-click an empty area on the desktop, and in the pop-up menu, select New, and then select Text Document. Creating a text file this way opens your default text editor with a blank text file on your desktop. You can change the name of the file to anything you want.
